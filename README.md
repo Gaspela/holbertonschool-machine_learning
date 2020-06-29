@@ -2,7 +2,7 @@
 
 <article id="description" class="gap formatted-content">
 
-<p><img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/9/c9d2bd7153ac51f24e52.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20200629%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200629T155439Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=591e05646b0590dba1a2b1e039fc81385cd723c48c047c01e4a5f759283d53b2" alt="" style=""></p>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/N1fQgbt/c9d2bd7153ac51f24e52.jpg" alt="c9d2bd7153ac51f24e52" border="0"></a>
 
 <h2>Resources</h2>
 
