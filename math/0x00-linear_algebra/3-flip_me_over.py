@@ -8,4 +8,3 @@ def matrix_transpose(matrix):
     """  t_matrix = zip(*matrix)
     for row in t_matrix:
         print(row) """
-        
