@@ -1,7 +1,7 @@
 <h1 class="gap">0x00. Linear Algebra</h1>
 
 <article id="description" class="gap formatted-content">
-    <p><img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2018/9/54daaf81421a9b894688.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20200713%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20200713T143134Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=94039bba8105e3a6159871a9372865f815ba9d47f667dda8e50d947b3d336676" alt="" style=""></p>
+    <p><a href="https://imgbb.com/"><img src="https://i.ibb.co/wrJtGdY/54daaf81421a9b894688.jpg" alt="54daaf81421a9b894688" border="0"></a></p>
 
 <h2>Resources</h2>
 
