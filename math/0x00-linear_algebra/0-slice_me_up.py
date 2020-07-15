@@ -1,10 +1,7 @@
 #!/usr/bin/env python3
 arr = [9, 8, 2, 3, 9, 4, 1, 0, 3]
-# arr[0:2] Get row value from zero init to position 2
 arr1 = arr[0:2]
-# arr[-5:] Get final five number, The : indicate from right to left
 arr2 = arr[-5:]
-# arr[1:6] Get six numbers, position 1 and six elements
 arr3 = arr[1:6]
 print("The first two numbers of the array are: {}".format(arr1))
 print("The last five numbers of the array are: {}".format(arr2))
