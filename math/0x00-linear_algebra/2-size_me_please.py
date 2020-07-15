@@ -5,13 +5,13 @@
 def matrix_shape(matrix):
     """ Shape matrix """
     shape = []
-    try:
-        while(len(matrix) > 0):
-            """ Number of rows of a list """
-            shape.append(len(matrix))
-            """ Number of columns list"""
+    while type(matrix) is list:
+        """ Number of rows of a list """
+        shape.append(len(matrix))
+        """ Number of columns list"""
+        if matrix[0]:
             matrix = matrix[0]
-    """ SyntaxError: unexpected EOF while parsing """
-    except TypeError:
-        pass
-        return shape
+        else:
+            break
+
+    return shape
