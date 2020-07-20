@@ -1,7 +1,7 @@
 <h1 class="gap"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0x01. </font><font style="vertical-align: inherit;">Graficado</font></font></h1>
 
 <article id="description" class="gap formatted-content">
-    <p><img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2018/9/b4601426ad02130836f9.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20200720%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20200720T153132Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=72d03f79eecb53d343e844ba4fccce8559c81faf913422a282417238e1be94f8" alt="" style=""></p>
+    <p><a href="https://ibb.co/d6DrMjL"><img src="https://i.ibb.co/0Zrc2mF/b4601426ad02130836f9.jpg" alt="b4601426ad02130836f9" border="0"></a></p>
 
 <h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recursos</font></font></h2>
 
