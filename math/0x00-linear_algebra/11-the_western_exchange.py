@@ -7,4 +7,4 @@ def np_transpose(matrix):
         The transposed array.
         Same as self.transpose().
     """
-    return matrix.T
+    return matrix.transpose
