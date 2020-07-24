@@ -3,6 +3,8 @@
 <article id="description" class="gap formatted-content">
 
 <a href="https://ibb.co/ydVXDPR"><img src="https://i.ibb.co/4KJ7ctf/Whats-App-Image-2020-07-24-at-13-12-54.jpg" alt="Whats-App-Image-2020-07-24-at-13-12-54" border="0"></a>
+
+<a href="https://ibb.co/TLkK15P"><img src="https://i.ibb.co/cL1bwd2/Whats-App-Image-2020-07-24-at-14-28-36.jpg" alt="Whats-App-Image-2020-07-24-at-14-28-36" border="0"></a><br /><a target='_blank' href='https://es.imgbb.com/'>crear album de fotos online para web</a><br />
    
 <p><img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2018/9/843c4172ce8623cf3f29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20200724%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20200724T170731Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=f790214967355d2553ba63046565af5ec27ab38273bc21dadbc026d4969253d5" alt="" style=""></p>
 
