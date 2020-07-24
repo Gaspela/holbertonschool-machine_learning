@@ -1,8 +1,9 @@
 <h1 class="gap">0x02. Calculus</h1>
 
 <article id="description" class="gap formatted-content">
-    <p><img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2018/9/f36e4add97ca7a303b2f.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20200724%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20200724T170731Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=48010d16fe1eb69926d612030a086a42d9dea80378220addfdb9c5903dc1c359" alt="" style=""></p>
 
+<a href="https://ibb.co/ydVXDPR"><img src="https://i.ibb.co/4KJ7ctf/Whats-App-Image-2020-07-24-at-13-12-54.jpg" alt="Whats-App-Image-2020-07-24-at-13-12-54" border="0"></a>
+   
 <p><img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2018/9/843c4172ce8623cf3f29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20200724%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20200724T170731Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=f790214967355d2553ba63046565af5ec27ab38273bc21dadbc026d4969253d5" alt="" style=""></p>
 
 <h2>Resources</h2>
