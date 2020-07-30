@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """ represents a poisson distribution """
 
 
@@ -23,7 +24,7 @@ class Poisson:
             return 0
         k = int(k)
         return(pow(self.lambtha, k) *
-               pow(2.7182818284590452353602874713527, -1 * self.lambtha) /
+               pow(2.7182818285, -1 * self.lambtha) /
                factorial(k))
 
     def cdf(self, k):
