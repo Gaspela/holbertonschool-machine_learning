@@ -20,8 +20,9 @@ class Normal:
                 raise ValueError("data must contain multiple values")
             else:
                 self.mean = float(sum(data) / len(data))
-                self.stddev = float((sum([(x - self.mean) ** 2 for x in data])
-                                     / (len(data))) ** .5)
+                self.stddev = float(
+                    (sum([(x - self.mean) **
+                          2 for x in data]) / (len(data))) ** .5)
 
     def z_score(self, x):
         """ Calculates the z-score of a given x-value """
@@ -33,6 +34,3 @@ class Normal:
 
     def pdf(self, x):
         """ Calculates the value of the PDF for a given x-value """
-
-
-        
