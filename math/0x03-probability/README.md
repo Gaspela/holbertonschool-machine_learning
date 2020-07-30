@@ -1,7 +1,7 @@
 <h1 class="gap">0x03. Probability</h1>
 
 <article id="description" class="gap formatted-content">
-    <p><img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/9/f7d69a8ae2b2f71d007b.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20200730%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20200730T171627Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=ca6e63358a42848debfddc26a6f887882f34432c2a8ab50fbcb15c21010a4e1e" alt="" style=""></p>
+    <p><a href="https://imgbb.com/"><img src="https://i.ibb.co/4Z052zp/f7d69a8ae2b2f71d007b.jpg" alt="f7d69a8ae2b2f71d007b" border="0"></a></p>
 
 <h2>Resources</h2>
 
