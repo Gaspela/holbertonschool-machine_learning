@@ -27,3 +27,28 @@ class Binomial:
                 n = mean/self.p
                 self.n = round(n)
                 self.p *= n/self.n
+
+    def pmf(self, k):
+        """ Calculates the value of the PMF for a given number"""
+        k = int(k)
+        if k > self.n or k < 0:
+            return 0
+        return (factorial(self.n) / factorial(k) / factorial(self.n - k)
+                * self.p ** k * (1 - self.p) ** (self.n - k))
+
+    def cdf(self, k):
+        """ Calculates the value of the CDF for a given number"""
+        if k > self.n or k < 0:
+            return 0
+        sumcdf = 0
+        for x in range(0, int(k) + 1):
+            sumcdf += self.pmf(x)
+        return sumcdf
+
+
+def factorial(n):
+    """ Calculate factorial of n """
+    fact = 1
+    for x in range(1, n + 1):
+        fact = x * fact
+    return fact
