@@ -194,9 +194,9 @@ class DeepNeuralNetwork:
         filename: is the file to which the object should be saved.
         If filename does not have the extension .pkl, add it.
         """
-        if filename != ".pkl":
+        if filename[-4:] != ".pkl":
             filename = filename + ".pkl"
-
+            
         with open(filename, 'wb') as f:
             pickle.dump(self, f)
 
