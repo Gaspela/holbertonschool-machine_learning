@@ -115,5 +115,3 @@ class DeepNeuralNetwork:
         A, cache = self.forward_prop(X)
         cost = self.cost(Y, A)
         return (np.round(A).astype(int), cost)
-
-    
