@@ -86,7 +86,13 @@ class DeepNeuralNetwork:
             prev_a = "A" + str(layer)
             z = (np.dot(self.__weights[w_i], self.__cache[prev_a]) +
                  self.__weights[b_i])
-            self.__cache[a_i] = 1 / (1 + np.exp(-z))
+
+            if layer != self.__L - 1:
+                self.__cache[a_i] = 1 / (1 + np.exp(-z))
+            else:
+                t = np.exp(z).sum(axis=0, keepdims=True)
+                self.__cache[a_i] = np.exp(z) / t
+
         return self.__cache["A" + str(self.__L)], self.__cache
 
     def cost(self, Y, A):
@@ -97,12 +103,10 @@ class DeepNeuralNetwork:
         A is a numpy.ndarray with shape (1, m) containing the activated
         output of the neuron for each example.
         """
-        y1 = 1 - Y
-        y2 = 1.0000001 - A
         m = Y.shape[1]
-        cost = -1 * (1 / m) * np.sum(Y * np.log(A) + y1 * np.log(y2))
+        L = -np.sum(Y * np.log(A), axis=1, keepdims=True)
 
-        return cost
+        return np.sum(L) / m
 
     def evaluate(self, X, Y):
         """
@@ -113,9 +117,11 @@ class DeepNeuralNetwork:
         Y: is a numpy.ndarray with shape (1, m) that contains the correct
         labels for the input data.
         """
-        A, cache = self.forward_prop(X)
+        A, self.__cache = self.forward_prop(X)
+        aux = np.where(A == np.amax(A, axis=0), 1, 0)
         cost = self.cost(Y, A)
-        return (np.round(A).astype(int), cost)
+
+        return (aux, cost)
 
     def gradient_descent(self, Y, cache, alpha=0.05):
         """
@@ -168,16 +174,21 @@ class DeepNeuralNetwork:
         cost_list = []
         accuracy_list = []
 
-        for i in range(iterations + 1):
+        for i in range(iterations):
             A, self.__cache = self.forward_prop(X)
             self.gradient_descent(Y, self.__cache, alpha)
-            cost = self.cost(Y, A)
+            cost = self.cost(Y, self.__cache["A{}".format(self.__L)])
 
-            if verbose:
-                if i % step == 0 or step == iterations:
-                    cost_list.append(cost)
-                    accuracy_list.append(i)
+            if not i % 100:
+                cost_list.append(cost)
+                accuracy_list.append(i)
+                if verbose:
                     print("Cost after {} iterations: {}".format(i, cost))
+        A, cost = self.evaluate(X, Y)
+        cost_list.append(cost)
+        accuracy_list.append(iterations)
+        if verbose:
+            print("Cost after {} iterations: {}".format(iterations, cost))
 
         if graph:
             plt.plot(accuracy_list, cost_list)
@@ -186,7 +197,7 @@ class DeepNeuralNetwork:
             plt.title("Trainig Cost")
             plt.show()
 
-        return self.evaluate(X, Y)
+        return A, cost
 
     def save(self, filename):
         """
@@ -200,6 +211,7 @@ class DeepNeuralNetwork:
         with open(filename, 'wb') as f:
             pickle.dump(self, f)
 
+    @staticmethod
     def load(filename):
         """
         Loads a pickled DeepNeuralNetwork object.
@@ -212,3 +224,4 @@ class DeepNeuralNetwork:
             return obj
         except FileNotFoundError:
             return None
+
