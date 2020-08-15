@@ -105,13 +105,13 @@ class Neuron:
                        np.dot(X, (A - Y).T).T[0] / X.shape[1])
         self.__b -= alpha * (A[0] - Y[0]).mean()
 
-    def train(self, X, Y, step=5000, alpha=0.05, verbose=True,
+    def train(self, X, Y, iterations=5000, alpha=0.05, verbose=True,
               graph=True, step=100):
         """
         Trains the neuron.
         X: is a numpy.ndarray with shape (nx, m) that contains the input data.
-            nx: is the number of input features to the neuron.
-            m: is the number of examples.
+        nx: is the number of input features to the neuron.
+        m: is the number of examples.
         Y: is a numpy.ndarray with shape (1, m) that contains
         the correct labels for the input data.
         step: is the number of step to train over.
@@ -120,7 +120,7 @@ class Neuron:
         about the training, If True, print Cost after {iteration} step:
         {cost} every step step.
         graph: is a boolean that defines whether or not to graph information
-        about the training once the training has completed.
+        about the training once the training has completed. 
 
         """
         if type(step) is not int:
