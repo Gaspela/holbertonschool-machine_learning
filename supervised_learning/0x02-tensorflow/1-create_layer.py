@@ -12,7 +12,8 @@ def create_layer(prev, n, activation):
     activation: is the activation function that the layer should use.
     each layer should be given the name layer.
     """
-    init_layer_weights = tf.contrib.layers.variance_scaling_initializer(mode="FAN_AVG")
+    init_layer_weights = tf.contrib.layers.variance_scaling_initializer(
+        mode="FAN_AVG")
     layer = tf.layers.Dense(n, activation, name='layer',
-                           kernel_initializer=init_layer_weights)
+                            kernel_initializer=init_layer_weights)
     return layer(prev)
