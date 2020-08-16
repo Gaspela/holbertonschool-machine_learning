@@ -3,6 +3,7 @@
 
 
 import numpy as np
+import matplotlib.pyplot as plt
 """
 neural network with one hidden
 layer performing binary classification

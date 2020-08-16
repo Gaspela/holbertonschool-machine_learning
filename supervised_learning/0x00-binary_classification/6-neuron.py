@@ -6,6 +6,7 @@ classification
 
 
 import numpy as np
+import matplotlib.pyplot as plt
 """ Single neuron performing binary classification """
 
 
