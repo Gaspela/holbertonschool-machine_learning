@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+""" Forward prop """
 
 
 import tensorflow as tf
