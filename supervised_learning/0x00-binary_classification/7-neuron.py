@@ -124,9 +124,9 @@ class Neuron:
         about the training once the training has completed. 
 
         """
-        if type(step) is not int:
+        if type(iterations) is not int:
             raise TypeError("step must be an integer")
-        if step <= 0:
+        if iterations <= 0:
             raise ValueError("step must be a positive integer")
         if type(alpha) is not float:
             raise TypeError("alpha must be a float")
@@ -135,19 +135,19 @@ class Neuron:
         if verbose or graph:
             if type(step) is not int:
                 raise TypeError("step must be an integer")
-        if step < 1:
-            raise ValueError("step must be a positive integer")
+            if iterations < 1:
+                raise ValueError("step must be a positive integer")
 
         cost_list = []
         accuracy_list = []
 
-        for i in range(step + 1):
+        for i in range(iterations + 1):
             self.forward_prop(X)
             self.gradient_descent(X, Y, self.__A, alpha)
             cost = self.cost(Y, self.__A)
 
             if verbose:
-                if i % step == 0 or step == step:
+                if i % step == 0 or step == iterations:
                     cost_list.append(cost)
                     accuracy_list.append(i)
                     print("Cost after {} step: {}".format(i, cost))
