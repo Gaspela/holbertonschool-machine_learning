@@ -18,4 +18,4 @@ def normalize(X, m, s):
     """
     standardizes = (X - m) / s
     return standardizes
-    """ return(X - m) / s """
+    """ return(X, - m) / s """
