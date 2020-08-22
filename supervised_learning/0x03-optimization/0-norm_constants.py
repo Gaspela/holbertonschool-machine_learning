@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" rmalization (standardization) constants of a matrix """
+""" Normalization (standardization) constants of a matrix """
 
 
 import numpy as np
