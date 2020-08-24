@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Precision 
+Precision
 """
 
 import numpy as np

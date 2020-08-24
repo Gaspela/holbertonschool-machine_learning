@@ -16,6 +16,6 @@ def sensitivity(confusion):
     sensitivity of each class.
     """
     true_p = np.diag(confusion)
-    false_n =np.sum(confusion, axis=1) - true_p
+    false_n = np.sum(confusion, axis=1) - true_p
     sens = true_p / (true_p + false_n)
     return sens
