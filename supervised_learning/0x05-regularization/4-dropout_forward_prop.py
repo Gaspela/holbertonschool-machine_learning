@@ -28,12 +28,12 @@ def dropout_forward_prop(X, weights, L, keep_prob):
                         < keep_prob).astype(int)
             X = np.multiply(X, cache[m])
             X = X / keep_prob
-        cache["A" + str(i)] = X
-        Z = np.dot(weights["W" + str(i + 1)], X) + weights["b" + str(i + 1)]
+        cache['A' + str(i)] = X
+        Z = np.dot(weights['W' + str(i + 1)], X) + weights['b' + str(i + 1)]
         if i == L - 1:
             t = np.exp(Z)
             X = t / np.sum(t, axis=0, keepdims=True)
-            cache["A" + str(i + 1)] = X
+            cache['A' + str(i + 1)] = X
         else:
             X = np.sinh(Z) / np.cosh(Z)
     return (cache)
