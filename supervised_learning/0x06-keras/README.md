@@ -1,7 +1,7 @@
 <h1 class="gap">0x06. Keras</h1>
 
 <article id="description" class="gap formatted-content">
-    <p><img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2018/11/c48e37d9cda2293173b7.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20200831%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20200831T171223Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=37c2f7e2803bf04b5fa38ad81ea05f6865ff4fdf95f84c3a835fc65d818c146d" alt="" style=""></p>
+    <p><a href="https://ibb.co/c2Wbsfz"><img src="https://i.ibb.co/nQX3Kdh/c48e37d9cda2293173b7.png" alt="c48e37d9cda2293173b7" border="0"></a></p>
 
 <h2>Resources</h2>
 
