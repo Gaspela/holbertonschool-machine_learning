@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Sequential
+Input
 """
 
 
@@ -16,17 +16,19 @@ def build_model(nx, layers, activations, lambtha, keep_prob):
     layer of the network.
     lambtha is the L2 regularization parameter.
     keep_prob is the probability that a node will be kept for dropout.
+
     Returns: the keras model.
     """
-    model = K.Sequential()
-    reg = K.regularizers.l2
-    model.add(K.layers.Dense(layers[0], input_shape=(nx,),
-                             activation=activations[0],
-                             kernel_regularizer=reg(lambtha)))
+    inputs = K.Input(shape=(nx,))
+    l2 = K.regularizers.l2(lambtha)
+    x = K.layers.Dense(layers[0], activation=activations[0],
+                       kernel_regularizer=l2)(inputs)
 
     for layer, act in zip(layers[1:], activations[1:]):
-        model.add(K.layers.Dropout(1 - keep_prob))
-        model.add(K.layers.Dense(layer, activation=act,
-                                 kernel_regularizer=reg(lambtha)))
+        x = K.layers.Dropout(1 - keep_prob)(x)
+        x = K.layers.Dense(layer, activation=act,
+                           kernel_regularizer=l2)(x)
+
+    model = K.Model(inputs=inputs, outputs=x)
 
     return model
