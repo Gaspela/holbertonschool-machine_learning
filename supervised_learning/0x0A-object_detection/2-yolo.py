@@ -89,3 +89,35 @@ class Yolo():
         Sigmoid
         """
         return 1. / (1. + np.exp(-array))
+
+    def filter_boxes(self, boxes, box_confidences, box_class_probs):
+        """
+        filtered_boxes: a numpy.ndarray of shape (?, 4) containing all of the
+        filtered bounding boxes:
+        box_classes: a numpy.ndarray of shape (?,) containing the class number
+        that each box in filtered_boxes predicts, respectively
+        box_scores: a numpy.ndarray of shape (?) containing the box scores
+        for each box in filtered_boxes, respectively
+        """
+        box_scores = []
+        box_classes = []
+        filtered_boxes = []
+        for i, (box_confidence, box_class_prob, box) in enumerate(
+                zip(box_confidences, box_class_probs, boxes)):
+            box_scores_per_ouput = box_confidence * box_class_prob
+            max_box_scores = np.max(box_scores_per_ouput, axis=3)
+            max_box_scores = max_box_scores.reshape(-1)
+            max_box_classes = np.argmax(box_scores_per_ouput, axis=3)
+            max_box_classes = max_box_classes.reshape(-1)
+            box = box.reshape(-1, 4)
+            index_list = np.where(max_box_scores < self.class_t)
+            max_box_scores_filtered = np.delete(max_box_scores, index_list)
+            max_box_classes_filtered = np.delete(max_box_classes, index_list)
+            filtered_box = np.delete(box, index_list, axis=0)
+            box_scores.append(max_box_scores_filtered)
+            box_classes.append(max_box_classes_filtered)
+            filtered_boxes.append(filtered_box)
+        box_scores = np.concatenate(box_scores)
+        box_classes = np.concatenate(box_classes)
+        filtered_boxes = np.concatenate(filtered_boxes, axis=0)
+        return (filtered_boxes, box_classes, box_scores)
