@@ -1,4 +1,4 @@
-<h1>Welcome to Machine learning</h1>
+<h1>Welcome to Machine learning.</h1>
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/N1fQgbt/c9d2bd7153ac51f24e52.jpg" alt="c9d2bd7153ac51f24e52" border="0"></a>
 <pre><code>New ways to learn (Machine learning)
