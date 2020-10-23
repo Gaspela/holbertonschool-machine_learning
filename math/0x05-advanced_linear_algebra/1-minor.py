@@ -11,8 +11,8 @@ def determinant(matrix):
     if type(matrix) is not list or len(matrix) is 0:
         raise TypeError('matrix must be a list of lists')
 
-    if not isinstance(matrix, list) or len(matrix) == 0:
-        raise TypeError("matrix must be a list of lists")
+    if not all(isinstance(row, list) for row in matrix):
+        raise TypeError('matrix must be a list of lists')
 
     for row in matrix:
         if not isinstance(row, list):
