@@ -8,6 +8,9 @@ def determinant(matrix):
     """
     matrix is a list of lists whose determinant should be calculated
     """
+    if type(matrix) is not list or len(matrix) is 0:
+        raise TypeError('matrix must be a list of lists')
+
     for row in matrix:
         if not isinstance(row, list):
             raise TypeError("matrix must be a list of lists")
