@@ -1,7 +1,7 @@
 <h1 class="gap">0x06. Multivariate Probability</h1>
 
 <article id="description" class="gap formatted-content">
-    <p><img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/5/108edd4c06fdede87f5e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20201026%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20201026T195431Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=7e8c1bc538b69a3978f97cab42d8ee3e474abdcae8ba188b568c853cb02a81e6" alt="" style=""></p>
+    <p><a href="https://ibb.co/8BPQ7qv"><img src="https://i.ibb.co/n0QKL9d/108edd4c06fdede87f5e.png" alt="108edd4c06fdede87f5e" border="0"></a></p>
 
 <h2>Resources</h2>
 
