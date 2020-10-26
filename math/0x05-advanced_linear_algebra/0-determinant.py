@@ -14,10 +14,6 @@ def determinant(matrix):
     if not all(isinstance(row, list) for row in matrix):
         raise TypeError('matrix must be a list of lists')
 
-    for row in matrix:
-        if not isinstance(row, list):
-            raise TypeError("matrix must be a list of lists")
-
     if len(matrix) is 1 and len(matrix[0]) is 0:
         return 1
 
@@ -26,6 +22,10 @@ def determinant(matrix):
 
     if len(matrix) is 1 and len(matrix[0]) is 1:
         return matrix[0][0]
+
+    if len(matrix) is 2 and len(matrix[0]) is 2:
+        det = matrix[0][0] * matrix[1][1] - matrix[1][0] * matrix[0][1]
+        return det
 
     detres = 0
     for i, j in enumerate(matrix[0]):
