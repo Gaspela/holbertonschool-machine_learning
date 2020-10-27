@@ -49,5 +49,5 @@ class MultiNormal:
         res = np.matmul((x - self.mean).T, np.linalg.inv(self.cov))
         res = np.exp(np.matmul(res, (x - self.mean)) / -2)
         res /= np.sqrt(pow(2 * np.pi, x.shape[0]) * np.linalg.det(self.cov))
-        
+
         return res[0][0]
