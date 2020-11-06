@@ -18,7 +18,7 @@ def optimum_k(X, kmin=1, kmax=None, iterations=1000):
     iterations for K-means
     This function should analyze at least 2 different cluster sizes
     """
-    if type(X) is not np.ndarray or len(X.shape) != 2:
+    if not isinstance(X, np.ndarray) or len(X.shape) != 2:
         return None, None
 
     if type(iterations) != int or iterations <= 0:
