@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Function that performs K-means on a dataset"""
+"""
+Hello, sklearn!
+"""
 
 import sklearn.cluster
 
