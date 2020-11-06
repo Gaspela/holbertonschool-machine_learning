@@ -36,6 +36,9 @@ def kmeans(X, k, iterations=1000):
 
     C = initialize(X, k)
 
+    if C is None:
+        return None, None
+
     clss = None
     while iterations:
         iterations -= 1
