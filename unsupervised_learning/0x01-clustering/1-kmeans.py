@@ -13,8 +13,7 @@ def initialize(X, k):
     d is the number of dimensions for each data point
     k is a positive integer containing the number of clusters
     """
-    if type(X) is not np.ndarray or len(X.shape) != 2\
-            or type(k) is not int or k <= 0:
+    if type(k) is not int or k <= 0:
         return None
     try:
         return np.random.uniform(np.amin(X, axis=0),
@@ -31,7 +30,7 @@ def kmeans(X, k, iterations=1000):
     clss is a numpy.ndarray of shape (n,) containing the index of the cluster
     in C that each data point belongs to
     """
-    if type(iterations) is not int or iterations <= 0:
+    if type(iterations) is not int or iterations < 1:
         return None, None
 
     C = initialize(X, k)

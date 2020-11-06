@@ -2,6 +2,8 @@
 """
 Optimize k
 """
+
+
 import numpy as np
 kmeans = __import__('1-kmeans').kmeans
 variance = __import__('2-variance').variance
@@ -18,22 +20,15 @@ def optimum_k(X, kmin=1, kmax=None, iterations=1000):
     iterations for K-means
     This function should analyze at least 2 different cluster sizes
     """
-    if type(X) is not np.ndarray or len(X.shape) != 2:
-        return None, None
-
-    if type(iterations) != int or iterations <= 0:
+    if type(X) is not np.ndarray:
         return None, None
 
     if kmax is None:
         kmax = X.shape[0]
 
-    if type(kmin) != int or kmin <= 0 or kmin >= X.shape[0]:
-        return None, None
-
-    if type(kmax) != int or kmax <= 0 or kmax > X.shape[0]:
-        return None, None
-
-    if kmin >= kmax:
+    if ((X.ndim != 2 or type(kmin) is not int
+         or kmin < 1 or type(iterations) is not int or iterations < 1
+         or type(kmax) is not int or kmax <= kmin)):
         return None, None
 
     results = []

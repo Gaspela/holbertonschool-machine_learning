@@ -22,8 +22,7 @@ def initialize(X, k):
     for each cluster, initialized as identity matrices
     You should use kmeans = __import__('1-kmeans').kmeans
     """
-    if not isinstance(X, np.ndarray) or len(X.shape) != 2\
-            or type(k) is not int or k <= 0:
+    if type(k) is not int or k < 1 or type(X) is not np.ndarray or X.ndim != 2:
         return None, None, None
 
     pi = np.full((k,), 1 / k)
