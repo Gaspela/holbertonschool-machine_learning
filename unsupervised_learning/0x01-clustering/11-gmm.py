@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-GMM 
+GMM
 """
 
 import sklearn.mixture
