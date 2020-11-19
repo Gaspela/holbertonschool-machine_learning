@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import numpy as np
-GP = __import__('0-gp').GaussianProcess
+GP = __import__('2-gp').GaussianProcess
 
 
 def f(x):
@@ -15,9 +15,11 @@ if __name__ == '__main__':
     Y_init = f(X_init)
 
     gp = GP(X_init, Y_init, l=0.6, sigma_f=2)
-    print(gp.X is X_init)
-    print(gp.Y is Y_init)
-    print(gp.l)
-    print(gp.sigma_f)
+    X_new = np.random.uniform(-np.pi, 2*np.pi, 1)
+    print('X_new:', X_new)
+    Y_new = f(X_new)
+    print('Y_new:', Y_new)
+    gp.update(X_new, Y_new)
+    print(gp.X.shape, gp.X)
+    print(gp.Y.shape, gp.Y)
     print(gp.K.shape, gp.K)
-    print(np.allclose(gp.kernel(X_init, X_init), gp.K))
