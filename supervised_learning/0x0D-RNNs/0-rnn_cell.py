@@ -7,7 +7,7 @@ import numpy as np
 
 class RNNCell:
     """
-    represents a cell of a simple RNNX
+    represents a cell of a simple RNNX:
     """
 
     def __init__(self, i, h, o):
