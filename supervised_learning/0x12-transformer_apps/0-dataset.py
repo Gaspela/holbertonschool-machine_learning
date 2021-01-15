@@ -44,4 +44,4 @@ class Dataset:
             (en.numpy() for pt, en in data),
             target_vocab_size=2**15)
 
-        return tokenizer_pt, tokenizer_en
+        return (tokenizer_pt, tokenizer_en)
