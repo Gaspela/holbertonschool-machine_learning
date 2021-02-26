@@ -28,9 +28,8 @@ class ModelIntervalCheck(Callback):
 
         self.total_steps += 1
         if self.total_steps % self.interval != 0:
-            # Nothing
             return
-
+            
         filepath = self.filepath.format(step=self.total_steps, **logs)
         if self.verbose > 0:
             print('\nStep {}: saving kmodel to {}'.format(self.total_steps,
