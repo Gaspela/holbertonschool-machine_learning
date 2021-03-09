@@ -1,7 +1,7 @@
 <h1 class="gap">0x00. Pandas</h1>
 
 <div class="gap" id="project-description">
-  <p><img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2020/9/727d302a62abcf5ba6875957657b0aa5ab546974.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOUWMNL5ANN%2F20210309%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20210309T153735Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=ac16b7b2ef3c91163e79cb92cc8bf0cc82c7fc05211276bd8e7eac4664f0a786" alt="" style=""></p>
+  <p><a href="https://ibb.co/tq6S15B"><img src="https://i.ibb.co/Stg2ZpN/727d302a62abcf5ba6875957657b0aa5ab546974.gif" alt="727d302a62abcf5ba6875957657b0aa5ab546974" border="0"></a></p>
 
 <h2>Resources</h2>
 
