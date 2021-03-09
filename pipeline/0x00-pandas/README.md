@@ -1,7 +1,9 @@
 <h1 class="gap">0x00. Pandas</h1>
 
 <div class="gap" id="project-description">
-  <p><a href="https://ibb.co/tq6S15B"><img src="https://i.ibb.co/Stg2ZpN/727d302a62abcf5ba6875957657b0aa5ab546974.gif" alt="727d302a62abcf5ba6875957657b0aa5ab546974" border="0"></a></p>
+  <p>
+  <a href="https://ibb.co/tq6S15B"><img src="https://i.ibb.co/Stg2ZpN/727d302a62abcf5ba6875957657b0aa5ab546974.gif" alt="727d302a62abcf5ba6875957657b0aa5ab546974" border="0"></a>
+  </p>
 
 <h2>Resources</h2>
 
