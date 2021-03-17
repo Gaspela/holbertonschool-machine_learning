@@ -1,7 +1,9 @@
 --  Email validation to sent
 DELIMITER //
-CREATE TRIGGER transaction__ BEFORE INSERT, UPDATE ON users FOR EACH ROW
+CREATE TRIGGER update_email BEFORE UPDATE ON users FOR EACH ROW
 BEGIN
-UPDATE users SET valid_email = 0 WHERE NEW.email <> OLD.email;
-END//
+    IF STRCMP(old.email, new.email) <> 0 THEN
+	    SET new.valid_email = 0;
+    END IF;
+END //
 DELIMITER ;
