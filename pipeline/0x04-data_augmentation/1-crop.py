@@ -11,7 +11,6 @@ def crop_image(image, size):
     size is a tuple containing the size of the crop
     Returns the cropped image
     """
-
     crop = tf.random_crop(image, size)
 
     return (crop)
